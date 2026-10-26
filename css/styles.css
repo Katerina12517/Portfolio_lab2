@@ -391,7 +391,7 @@ input:user-valid {
 }
 
 input:user-invalid {
-  border-color: red;
+  border-color: rgb(248, 115, 115);
 }
 
 .modal {
