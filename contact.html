@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контакти та форми: реєстрація, вхід і зворотний зв'язок.">
+  <title>Контакти</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="contact" id="top">
+<header>
+  <h1>Тейлор Свіфт</h1>
+</header>
+  <nav class="tabs">
+    <ul>
+    <li><a href="index.html">Головна</a></li>
+    <li><a href="#register">Форма реєстрації</a></li>
+    <li><a href="#login">Форма входу</a></li>
+    <li><a href="#feedback">Форма зворотного звʼязку</a></li>
+    </ul>
+  </nav>
+
+<main>
+  <section  class="top-block">
+    <div class="info clearfix">
+      <img class="fl" src="imagas/cont1.jpg" alt="Фото Тейлор Свіфт" width="90" height="90">
+      
+      <p>Ласкаво просимо до нашого фан-клубу, присвяченого незрівнянній Тейлор Свіфт! Тейлор — не просто світова поп-ікона, а геніальна оповідачка, чиї відверті тексти та постійні музичні трансформації стали справжнім саундтреком до життя мільйонів. 
+        <img class="fr" src="imagas/cont8.jpg" alt="Фото Тейлор Свіфт" width="90" height="90">
+        Тут ми об'єднуємо всіх "свіфтіс", щоб разом відзначати її рекордні досягнення, розгадувати фірмові "пасхалки" та насолоджуватися кожною новою ерою нашої улюбленої артистки. Приєднуйтесь до нашої великої родини, адже разом ми створюємо власну магію!</p>
+      <img class="fl-clear" src="imagas/cont3.jpg" alt="Фото Тейлор Свіфт" width="90" height="90">
+    </div>
+    <div class="stack">
+      <img class="s1" src="imagas/cont4.png" alt="Фото Тейлор Свіфт 1">
+      <img class="s2" src="imagas/portrait.jpeg" alt="Фото Тейлор Свіфт 2">
+      <img class="s3" src="imagas/cont6.jpeg" alt="Фото Тейлор Свіфт 3">
+    </div>
+  </section>
+ <hr>
+
+<form id="register" action="#" method="post" enctype="multipart/form-data">
+  <h4>Форма реєстрації</h4>
+
+  <label> Аватар: <img src="imagas/avatar1.png" alt="Вибрати аватарку" class="avatar-img">
+  <input type="file" name="avatar" accept=".jpg,.png" style="display: none;"> </label><br>
+
+  <label>Імʼя: <input type="text" name="fname" required></label><br>
+  <label>Прізвище: <input type="text" name="lname" required></label><br>
+
+  Стать:
+  <label><input type="radio" name="gender" value="m" required> Чоловіча</label>
+  <label><input type="radio" name="gender" value="f"> Жіноча</label><br>
+
+  <label>Вік: <input type="number" name="age" min="14" max="100" value="21"></label><br>
+  <label>Дата народження: <input type="date" name="bd"></label><br>
+
+  <label>Країна:
+    <select name="country" required>
+      <option value="">Оберіть країну</option>
+      <option value="ua">Україна</option>
+      <option value="pl">Польща</option>
+      <option value="de">Німеччина</option>
+    </select>
+  </label><br>
+
+  <label>Телефон: <input type="tel" name="phone" placeholder="+38(0XX)XXX-XX-XX"></label><br>
+  <label>Соцмережа: <input type="url" name="soc"></label><br>
+  <label>Ел. пошта: <input type="email" name="email" required></label><br>
+  <label>Пароль: <input type="password" name="pass" minlength="8" required></label><br>
+
+  <label><input type="checkbox" name="terms" required> Згоден з умовами</label><br>
+<div class="buttons">
+  <button type="submit">Зареєструватися</button>
+  <button type="reset">Відміна</button>
+</div>
+</form>
+
+
+<div class="modal" id="login"> <a href="#top" class="backdrop"></a>
+<form id="login" action="#" method="post">
+  <h4>Форма входу</h4>
+
+  <label>Логін: <input type="text" name="login" required></label><br>
+  <label>Пароль: <input type="password" name="password" required></label><br>
+<div class="buttons">
+  <button type="submit">Відправити</button>
+</div>
+</form>
+</div>
+
+<form id="feedback" action="#" method="post">
+  <h4>Форма зворотного звʼязку</h4>
+
+  <label>Імʼя: <input type="text" name="name" required></label><br>
+  <label>Ел. пошта: <input type="email" name="email" required></label><br>
+
+  <label>Тема:
+    <select name="topic" required>
+      <option value="">Оберіть тему</option>
+      <option>Питання</option>
+      <option>Пропозиція</option>
+      <option>Скарга</option>
+    </select>
+  </label><br>
+
+  <label>Повідомлення:<br>
+    <textarea name="message" rows="7" required></textarea>
+  </label><br>
+<div class="buttons">
+  <button type="submit">Відправити</button>
+</div>
+</form>
+
+<div class="social">
+  <span>Посилання на соц.мережі:</span>
+  <a href="https://facebook.com"><img src="imagas/facebook3.jpg" alt="Facebook"></a>
+  <a href="https://instagram.com"><img src="imagas/instagram1.jpg" alt="Instagram"></a>
+  <a href="https://spotify.com/"><img src="imagas/spotify1.jpg" alt="Spotify"></a>
+  <a href="https://youtube.com"><img src="imagas/youtube1.jpg" alt="YouTube"></a>
+</div>
+
+<a href="#" class="up-button" title="Повернутися наверх"> <img src="imagas/strilka.jpg" alt="Вгору"></a>
+
+</main>
+</body>
+</html>
